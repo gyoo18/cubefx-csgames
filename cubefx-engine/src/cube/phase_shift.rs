@@ -116,7 +116,6 @@ pub(crate) fn phase_shift_kernel_one_window<F: Float>(
     let mut output_re_view = output_re.view_mut(output_re_layout);
     let mut output_im_view = output_im.view_mut(output_im_layout);
 
-    // We do it 10 times just to make sure
     for k in 0..num_freq_bins {
         // let k = k % num_freq_bins;
 
